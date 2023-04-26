@@ -22,10 +22,10 @@
 <h2>Autoría</h2>
 <ol>
     <li></li>
-    <li></li>
+    <li>Berenice Gudiño</li>
     <li>Juan Pablo FM</li>
     <li>Abraham Castillo</li>
-    <li>Maria Guadalupe Galván Becerril</li>
+    <li></li>
 </ol>
 <h2>Agradecimientos</h2>
 <p>Gracias a todo el equipo por la buena comunicación y trabajo en equipo</p>
