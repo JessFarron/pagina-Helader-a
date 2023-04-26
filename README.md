@@ -26,6 +26,7 @@
     <li>Juan Pablo FM</li>
     <li>Abraham Castillo</li>
     <li></li>
+    <li>Karen Valier</li>
 </ol>
 <h2>Agradecimientos</h2>
 <p>Gracias a todo el equipo por la buena comunicación y trabajo en equipo</p>
