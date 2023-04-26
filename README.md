@@ -22,7 +22,7 @@
 <h2>Autoría</h2>
 <ol>
     <li></li>
-    <li></li>
+    <li>Berenice Gudiño</li>
     <li>Juan Pablo FM</li>
     <li>Abraham Castillo</li>
     <li></li>
