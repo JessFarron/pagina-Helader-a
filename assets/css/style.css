@@ -1,6 +1,6 @@
-nav {
- background-color: #fbbbd2;
-} 
-/* #helado {
-    background-image:url("../image/1284685.jpg");
-} */
+#fondo{
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    text-align:justify;
+}
