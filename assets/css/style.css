@@ -4,3 +4,43 @@
     background-size: cover;
     text-align:justify;
 }
+
+.imagen-1 {
+    width: 190px;
+    height: 120px;
+    margin-left: 95px;
+}
+
+.imagen-2{
+    width: 190px;
+    height: 120px;
+    margin-left: 95px;
+}
+.contenedor {
+    display: flex;
+}
+
+.txt-1 {
+    margin: 0px 205px;
+    text-align: center;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+.btn-1{
+    background: #CAFFD7;
+    color: black;
+    border-radius: 45px;
+    transition: transform 0.1s ease;
+} 
+
+.p style{
+    background: #ccc;
+    height: 250px;
+    width: 300px;
+    margin: 2rem auto;
+    text-align: center;
+}
