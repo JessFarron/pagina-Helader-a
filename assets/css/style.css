@@ -44,3 +44,7 @@
     margin: 2rem auto;
     text-align: center;
 }
+footer{
+    background: rgb(190,242,255);
+    background: linear-gradient(0deg, rgba(190,242,255,1) 65%, rgba(233,250,254,1) 93%);
+}
