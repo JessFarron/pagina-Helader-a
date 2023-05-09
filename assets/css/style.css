@@ -4,6 +4,10 @@
     background-size: cover;
     text-align:justify;
 }
+body {
+background: rgb(190,242,255);
+ background: linear-gradient(0deg, rgba(190,242,255,1) 0%, rgba(252,252,236,1) 48%);
+}
 
 .imagen-1 {
     width: 190px;
@@ -47,12 +51,21 @@
     margin: 2rem auto;
     text-align: center;
 }
-footer{
-    background: rgb(190,242,255);
-    background: linear-gradient(0deg, rgba(190,242,255,1) 65%, rgba(233,250,254,1) 93%);
-}
+
 
 .paneles{
     background: rgb(190,242,255);
     background: linear-gradient(0deg, rgba(233,250,254,1) 65%, #AD7C68 90%);
+}
+
+#contenedor-imagen-con-formulario { 
+    display: flex;
+    justify-content:space-around;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    #imagen-contacto {display: none;}
+
 }
