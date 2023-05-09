@@ -24,6 +24,9 @@
     margin: 0px 205px;
     text-align: center;
 }
+#redondear,#redondear2,#redondear3{
+    border-radius: 10px;
+}
 
 .btn{
     text-decoration: none;
