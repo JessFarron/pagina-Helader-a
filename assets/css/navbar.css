@@ -1,56 +1,22 @@
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #242943;
-    font-family: "Poppins", sans-serif;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  .logo {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .nav-links {
-      width: 60%;
-    }
-   }
+.navbar {
+  background-size: contain;
+  background-position: center;
+}
+
+.navbar-brand img {
+  height: 120px;
+}
+
+.navbar-nav li {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+#perfil{
+  width: 50PX;
+  height: 50PX;
+}
