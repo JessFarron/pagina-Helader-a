@@ -75,6 +75,9 @@ footer{
   padding: 1em;
 }
 
+#imagen-contacto { 
+  border-radius: 10px;
+}
 @media (min-width: 768px) {
   .card img {
     height: 11em;
