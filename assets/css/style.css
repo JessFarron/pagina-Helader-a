@@ -1,86 +1,18 @@
-#fondo{
-    height: 350px;
-    background-position: center;
-    background-size: cover;
-    text-align:justify;
+*{
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
-.imagen-1 {
-    width: 190px;
-    height: 120px;
-    margin-left: 95px;
-}
-.imagen-2{
-    width: 190px;
-    height: 120px;
-    margin-left: 95px;
-}
-.contenedor {
-    display: flex;
+body{
+  background: linear-gradient(to top, #FDE1B9, #FCFCEC);
+
 }
 
-.txt-1 {
-    margin: 0px 205px;
-    text-align: center;
-}
-.paneles{
-    border-radius: 10px;
-}
 
-.btn{
-    text-decoration: none;
-    padding: 15px 40px;
-}
 
-.btn-1{
-    background: #CAFFD7;
-    color: black;
-    border-radius: 45px;
-    transition: transform 0.1s ease;
-} 
-
-.p style{
-    background: #ccc;
-    height: 250px;
-    width: 300px;
-    margin: 2rem auto;
-    text-align: center;
-}
 footer{
     background: rgb(190,242,255);
     background: linear-gradient(0deg, rgba(190,242,255,1) 65%, rgba(233,250,254,1) 93%);
 }
 
-.paneles{
-    background: rgb(190,242,255);
-    background: linear-gradient(0deg, rgba(233,250,254,1) 65%, #AD7C68 90%);
-}
-.cards-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.card img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  width: calc(100%/3);
-  border: none;
-  border-radius: 0;
-  text-align: center;
-}
-.carousel-inner {
-  padding: 1em;
-}
-
-#imagen-contacto { 
-  border-radius: 10px;
-}
-@media (min-width: 768px) {
-  .card img {
-    height: 11em;
-  }
-}
 
