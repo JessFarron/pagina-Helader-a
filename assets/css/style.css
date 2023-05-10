@@ -23,7 +23,7 @@
     margin: 0px 205px;
     text-align: center;
 }
-#redondear,#redondear2,#redondear3{
+.paneles{
     border-radius: 10px;
 }
 
