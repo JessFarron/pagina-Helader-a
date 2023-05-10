@@ -4,9 +4,15 @@
     background-size: cover;
     text-align:justify;
 }
-body {
-background: rgb(190,242,255);
- background: linear-gradient(0deg, rgba(190,242,255,1) 0%, rgba(252,252,236,1) 48%);
+footer {
+
+ background: linear-gradient(to top,  #BEF2FF, #cdf1fa);
+ 
+
+}                                                   
+body {  
+    background: linear-gradient(to top, #FDE1B9, #FCFCEC);
+
 }
 
 .imagen-1 {
@@ -61,6 +67,9 @@ background: rgb(190,242,255);
 #contenedor-imagen-con-formulario { 
     display: flex;
     justify-content:space-around;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
 
 }
 
