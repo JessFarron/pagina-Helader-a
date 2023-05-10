@@ -1,0 +1,22 @@
+.navbar {
+  background-size:cover;
+  background-position: center;
+}
+
+.navbar-brand img {
+  height: 120px;
+}
+
+.navbar-nav li {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+#perfil{
+  width: 50PX;
+  height: 50PX;
+}
