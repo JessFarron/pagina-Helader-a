@@ -4,6 +4,9 @@
   background-position: center;
 }
 
+#fondo{
+  height: 150px;
+}
 .navbar-brand img {
   height: 150px;
 }
@@ -18,8 +21,8 @@
 }
 
 #perfil{
-  width: 50PX;
-  height: 50PX;
+  width: 38PX;
+  height: 38PX;
 }
 
 .d-flex{
