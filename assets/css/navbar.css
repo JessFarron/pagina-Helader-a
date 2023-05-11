@@ -5,7 +5,7 @@
 }
 
 .navbar-brand img {
-  height: 120px;
+  height: 150px;
 }
 
 .navbar-nav li {
@@ -20,4 +20,8 @@
 #perfil{
   width: 50PX;
   height: 50PX;
+}
+
+.d-flex{
+  height: 40px ;
 }
