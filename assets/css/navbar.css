@@ -1,30 +1,47 @@
 .navbar {
- 
+  height: 300;
   background-size:cover;
-  background-position: center;
+  background-position:center;   
 }
 
+#svg{
+  height: 300px;
+}
 #fondo{
-  height: 150px;
+  height: 300px;
 }
 .navbar-brand img {
-  height: 150px;
+  height: 250px;
 }
 
 .navbar-nav li {
   margin-right: 10px;
   font-weight: bold;
+  padding: 50px;
+  position: relative;
+  bottom: 50px;
+
+}
+
+#logo{ 
+  width: 150px;
+  height: 100px;
+  position: relative;
+  bottom: 50px;
 }
 
 .navbar-nav li:last-child {
   margin-right: 0;
+  position: relative;
+  bottom: 50px;
 }
 
 #perfil{
-  width: 38PX;
-  height: 38PX;
+  width: 25PX;
+  height: 25PX;
 }
 
 .d-flex{
-  height: 40px ;
+  height: 35px ;
+
 }
