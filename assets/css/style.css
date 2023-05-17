@@ -2,7 +2,12 @@
 
 * {
   font-family: 'Josefin Sans', sans-serif;
-  
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body{
+  background: linear-gradient(to top, #FDE1B9, #FCFCEC);
 }
 
 .titulos{
@@ -33,12 +38,11 @@
     align-content: center;
     height: 500px;
   }
-
+  
   .texto-imagen{
     width: 300px;
   }
 }
-
 
 .texto-imagen {
   
