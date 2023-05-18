@@ -66,72 +66,72 @@
     </div>
   </nav>
 
- <!--Formulario alta de productos-->
- <div class="container">
+  <!--Formulario alta de productos-->
+  <div class="container">
     <div class="row">
-        <div class="col">
-            <form>
-                <div class="row mb-3">
-                  <label for="nombre" class="col-sm-2 col-form-label">Nombre del producto</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nombre" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="descripcion" class="col-sm-2 col-form-label">Descripcion</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="descripcion" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                    <label for="precio" class="col-sm-2 col-form-label">Precio</label>
-                    <div class="col-sm-10">
-                      <input type="number" class="form-control" id="precio" required>
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="img-url" class="col-sm-2 col-form-label">Url de la imagen</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="img-url" required>
-                    </div>
-                  </div>
-                <fieldset class="row mb-3">
-                  <legend class="col-form-label col-sm-2 pt-0">Categoria</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="helados" value="option1" required>
-                      <label class="form-check-label" for="helados">
-                       Helados
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="paletas" value="option2" required>
-                      <label class="form-check-label" for="paletas">
-                        Paletas
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="aguas" value="option3" required>
-                      <label class="form-check-label" for="aguas">
-                        Aguas
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-               
-                <button type="submit" class="btn btn-primary">Agregar</button>
-                <button type="submit" class="btn btn-danger">Borrar</button>
-              </form>
-        </div>
+      <div class="col">
+        <form>
+          <div class="row mb-3">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre del producto</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="descripcion" class="col-sm-2 col-form-label">Descripcion</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="descripcion" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="precio" class="col-sm-2 col-form-label">Precio</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="precio" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="img-url" class="col-sm-2 col-form-label">Url de la imagen</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="img-url" required>
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Categoria</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="helados" value="helados" required>
+                <label class="form-check-label" for="helados">
+                  Helados
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="paletas" value="paletas" required>
+                <label class="form-check-label" for="paletas">
+                  Paletas
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="aguas" value="aguas" required>
+                <label class="form-check-label" for="aguas">
+                  Aguas
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <button onclick="agregarProductos(event)"  type="submit" class="btn btn-primary">Agregar</button>
+          <button type="submit" class="btn btn-danger">Borrar</button>
+        </form>
+      </div>
     </div>
- </div>
- 
+  </div>
+
 
 
   <!--footer responsive-->
   <footer>
     <div class="container-fluid">
-      <div class="row p-5 mt-4 justify-content-center text-center" >
+      <div class="row p-5 mt-4 justify-content-center text-center">
         <div class="col-lg-3 col-md-3 col-sm-12">
           <img src="../image/imgs-navbar/logo.png" alt="logo Los reyes de la michoacana" class="img-fluid"
             style="width: 80px" />
@@ -200,10 +200,11 @@
         </div>
       </div>
     </div>
-</footer>
+  </footer>
 
-
-
+  <!-- Script Externo -->
+  <script src="../Scripts/formulario-alta.js"></script>
+  <!-- Script Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
