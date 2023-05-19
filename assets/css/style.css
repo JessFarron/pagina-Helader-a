@@ -174,3 +174,43 @@ footer {
   border-radius: 10px;
   background:  #fcfcec;
 }
+
+
+/* STYLE DE PRODUCTOS */
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nombre-producto {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.precio-producto {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.boton-agregar{
+  color: #FFFFFF;
+  background-color:  black;
+  padding: 2px 30px;
+  border-radius: 15px;
+}
+
+.titulo-productos {
+  font-weight: 600;
+}
+
+#titulo-categorias {
+  font-weight: 600;
+}
+
+#links-productos {
+  font-size: 20px;
+}
+
+/* ------------------------------ */
