@@ -26,7 +26,20 @@ También puedes registrarte como usuario para acceder a funcionalidades adiciona
 
 
 ## Colaboradores
-[github/JessFarron](https://github.com/JessFarron).
+[github/JessFarron](https://github.com/JessFarron)
+[github/danngarcia](https://github.com/danngarcia)
+[github/jpfigueroamoran](https://github.com/jpfigueroamoran) 
+[github/didierlp](https://github.com/didierlp) Didier Lemus Pérez
+[github/alexismoreno9811](https://github.com/alexismoreno9811) Alexis Moreno
+[github/almber](https://github.com/almber) Berenice Gudiño
+[github/karen-vp](https://github.com/karen-vp) Karen Valier
+[github/acp4](https://github.com/acp4) Abraham Castillo
+[github/lupitagb](https://github.com/lupitagb) Guadalupe Galván
+
+
+
+
+
 
 ## Preguntas y contribuciones
 En caso de preguntas o deseos de contribuir al proyecto, puedes enviar un correo a .
