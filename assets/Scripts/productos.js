@@ -28,13 +28,43 @@ const productos = [
         precio: "45",
         url: "assets/image/imgs-helado/helado_baileys.jpg",
     },
+    {
+        categoria: "paletas",
+        nombre: "maracuya",
+        descripcion: "Es paleta de maracuya",
+        precio: "35",
+        url: "assets/image/imgs-paletas/maracuya.png",
+    },
+    {
+        categoria: "paletas",
+        nombre: "oreo",
+        descripcion: "Es paleta de galleta oreo",
+        precio: "35",
+        url: "assets/image/imgs-paletas/paleta-oreo.png",
+    },
+    {
+        categoria: "paletas",
+        nombre: "fresa",
+        descripcion: "Es paleta de fresa",
+        precio: "35",
+        url: "assets/image/imgs-paletas/paleta-fresa.png",
+    },
+
+    {
+        categoria: "paletas",
+        nombre: "nuez",
+        descripcion: "Es paleta de nuez",
+        precio: "45",
+        url: "assets/image/imgs-paletas/paleta-nuez.png",
+    },
+    {
+        categoria: "helados",
+        nombre: "chocolate",
+        descripcion: "Es de chocolate",
+        precio: "35",
+        url: "assets/image/imgs-paletas/chocolate.png",
+    }
     
-
-
-
-
-
-
 ]
 
 
