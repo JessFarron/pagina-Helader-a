@@ -200,4 +200,17 @@ footer {
   padding: 2px 30px;
   border-radius: 15px;
 }
+
+.titulo-productos {
+  font-weight: 600;
+}
+
+#titulo-categorias {
+  font-weight: 600;
+}
+
+#links-productos {
+  font-size: 20px;
+}
+
 /* ------------------------------ */
