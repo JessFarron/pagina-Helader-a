@@ -6,7 +6,9 @@ const agregarProductos = (event) => {
     const descripcion = document.getElementById("descripcion").value;
     const precio = document.getElementById("precio").value;
     const url = document.getElementById("img-url").value;
-    const categoria = document.querySelectorAll(".form-check-input").cheked.value;
+    const cate = document.getElementsByName("gridRadios");
+    const selected = Array.from(cate).find(radio => radio.checked);
+    const categoria = selected.value;
 
     const producto = {
         nombre: nombre,
