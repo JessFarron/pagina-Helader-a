@@ -12,7 +12,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 </head>
 
-<body>
+<body style="background: linear-gradient(to top, #fde1b9, #fcfcec)">
   <!-- NavBar -->
   <nav id="nav-menu" class="navbar navbar-expand-lg navbar-light px-md-2 p-sm-1">
     <div class="container-fluid d-flex justify-content-between align-items-start align-content-start nav-content">
@@ -69,54 +69,49 @@
   </nav>
 
   <!-- EMPIEZA FORMATO CONTACTANOS  -->
-  <div class="container container-round mt-5 mb-5 justify-content-center">
+  <div class="container m-5" style="background: linear-gradient(to top, #fde1b9, #fcfcec)">
     <!--Aqui empieza el formulario-->
-    <div class="row">
-      <div id="contenedor-imagen-con-formulario" class="col-lg-6 d-none d-lg-flex p-0">
-        <img class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" src="../image/imgs-pagina-contacto/1-form.jpg" alt="pila de helados" />
+    <div class="row justify-content-center">
+      <div id="contenedor-imagen-con-formulario" class="col-6">
+        <img class="img-fluid d-none d-sm-block" id="imagen-contacto" src="../image/imgs-pagina-contacto/1-form.jpg"
+          alt="" />
       </div>
-      <div class="col-lg-6 p-5">
+      <div class="col-md-6 col-sm-12 ">
         <form>
-          <div class="row text-center">
-            <div class="col mt-5 mb-5">
-              <h1>Contáctanos</h1>
-              <p>
-                Si está interesado en la venta de nuestros productos, le animamos a ponerse en contacto con nosotros.
-              </p>
-            </div>
-          </div>
+          <h1>Contáctanos</h1>
+          <p>
+            Si está interesado en la venta de nuestros productos, le animamos
+            a ponerse en contacto con nosotros.
+          </p>
+
           <div class="row mb-4">
-            <div class="col-lg-6 col-sm-12 my-lg-0 my-3">
+            <div class="col">
               <div class="form-outline">
-                <label class="form-label" for="nombre">Nombre</label>
-                <input type="text" id="nombre" class="form-control" required />
+                <label class="form-label" for="form6Example1">Nombre</label>
+                <input type="text" id="form6Example1" class="form-control" required />
               </div>
             </div>
-            <div class="col-lg-6 col-sm-12 my-lg-0 my-3">
+            <div class="col">
               <div class="form-outline">
-                <label class="form-label" for="email">Email</label>
-                <input type="email" id="email" class="form-control" required />
+                <label class="form-label" for="form6Example5">Email</label>
+                <input type="email" id="form6Example5" class="form-control" required />
               </div>
             </div>
           </div>
-          <div class="col-sm-12">
-            <div class="form-outline mb-3">
-              <label class="form-label" for="tema">Tema</label>
-              <input type="text" id="tema" class="form-control" required />
-            </div>
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example6">Tema</label>
+            <input type="text" id="form6Example6" class="form-control" required />
           </div>
-          <div class="col-sm-12">
-            <div class="form-outline mb-3">
-              <label class="form-label" for="mensaje">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-            </div>
+
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example7">Mensaje</label>
+            <textarea class="form-control" id="form6Example7" rows="4" required></textarea>
           </div>
-          <div class="col-sm-12 mt-4">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-dark btn-block mb-4">
-              Enviar
-            </button>
-          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4">
+            Enviar
+          </button>
         </form>
       </div>
     </div>
@@ -200,3 +195,6 @@
 </body>
 
 </html>
+
+
+

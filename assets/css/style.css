@@ -50,8 +50,8 @@ body{
   width: 500px;
   text-align: center;
   padding: 30px;
-  color: #000000;
-  background-color: #FAB9D1;
+  color: #ffffff;
+  background: linear-gradient(0deg, rgba(233, 250, 254, 0) 10%, #AD7C68 100%);
 
 }
 
@@ -114,7 +114,7 @@ footer {
 
 .paneles {
   background: rgb(190, 242, 255);
-  background: linear-gradient(0deg, rgba(233, 250, 254, 1) 65%, #FAB9D1 90%);
+  background: linear-gradient(0deg, rgba(233, 250, 254, 1) 65%, #AD7C68 90%);
 }
 /* Aqui comienza el estilo del carousel */
 .card{
@@ -170,22 +170,9 @@ footer {
 }
 
 /*Aqui empiza log in*/
-.container-round{
+#container4{
   border-radius: 10px;
   background:  #fcfcec;
-}
-
-.anchor-text{
-  color: #da0f7e;
-}
-
-.form-check-input[type="checkbox"]:checked{
-  background-color:  #da0f7e;
-  border-color:  #da0f7e;
-}
-
-.form-check-input[type="checkbox"]:not(:checked){
-  border-color:  #da0f7e;
 }
 
 
