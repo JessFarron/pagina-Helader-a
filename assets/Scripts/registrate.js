@@ -1,3 +1,5 @@
+
+
 function validarFormulario() {
   var nombre = document.getElementById('nombre').value;
   var correo = document.getElementById('correo').value;
@@ -84,79 +86,44 @@ function mostrarVentanaEmergente() {
   // Agregar la ventana emergente al cuerpo del documento
   document.body.appendChild(ventanaEmergente);
 
-// Lanzar el confetti utilizando la biblioteca JSConfetti
-JSConfetti.addConfetti();
+  // Lanzar el confetti utilizando la biblioteca confetti-js
+  confetti.start();
 
-// Después de unos segundos, eliminar la ventana emergente y detener el confetti
-setTimeout(function () {
-document.body.removeChild(ventanaEmergente);
-JSConfetti.removeConfetti();
-}, 3000);
-}
-
-function mostrarContrasena() {
-var inputContrasena = document.getElementById('contrasena');
-var inputConfirContrasena = document.getElementById('confirContrasena');
-
-if (inputContrasena.type === 'password') {
-inputContrasena.type = 'text';
-} else {
-inputContrasena.type = 'password';
-}
-
-if (inputConfirContrasena.type === 'password') {
-inputConfirContrasena.type = 'text';
-} else {
-inputConfirContrasena.type = 'password';
-}
-}
-
-
-function guardarDatos() {
-  var nombre = document.getElementById('nombre').value;
-  var correo = document.getElementById('correo').value;
-  var contrasena = document.getElementById('contrasena').value;
-  var confirContrasena = document.getElementById('confirContrasena').value;
-  var telefono = document.getElementById('telefono').value;
-  var direccionEnvio = document.getElementById('direccionEnvio').value;
-
-  // Crear un objeto con los datos a guardar
-  var datos = {
-    nombre: nombre,
-    correo: correo,
-    contrasena: contrasena,
-    confirContrasena: confirContrasena,
-    telefono: telefono,
-    direccionEnvio: direccionEnvio
-  };
-
-  // Guardar los datos en el localStorage como una cadena JSON
-  localStorage.setItem('datosFormulario', JSON.stringify(datos));
-
-  // Establecer la expiración del localStorage después de 5 minutos (300,000 milisegundos)
-  var expiracion = Date.now() + 300000; // 5 minutos en milisegundos
-  localStorage.setItem('datosFormularioExpiracion', expiracion);
-}
-
-// Recuperar datos del localStorage si existen y verificar la expiración
-window.addEventListener('load', function () {
-  var datosGuardados = localStorage.getItem('datosFormulario');
-  var expiracion = localStorage.getItem('datosFormularioExpiracion');
-
-  if (datosGuardados && expiracion) {
-    var tiempoActual = Date.now();
-    if (tiempoActual < expiracion) {
-      var datos = JSON.parse(datosGuardados);
-      document.getElementById('nombre').value = datos.nombre;
-      document.getElementById('correo').value = datos.correo;
-      document.getElementById('contrasena').value = datos.contrasena;
-      document.getElementById('confirContrasena').value = datos.confirContrasena;
-      document.getElementById('telefono').value = datos.telefono;
-      document.getElementById('direccionEnvio').value = datos.direccionEnvio;
-    } else {
-      // Los datos han expirado, limpiar el localStorage
-      localStorage.removeItem('datosFormulario');
-      localStorage.removeItem('datosFormularioExpiracion');
+  // Después de unos segundos, eliminar la ventana emergente y detener el confetti
+  setTimeout(function () {
+    document.body.removeChild(ventanaEmergente);
+    confetti.stop();
+    }, 5000);
     }
-  }
-});
+    
+    function mostrarContrasena() {
+    var inputContrasena = document.getElementById('contrasena');
+    var inputConfirContrasena = document.getElementById('confirContrasena');
+    
+    if (inputContrasena.type === 'password') {
+    inputContrasena.type = 'text';
+    } else {
+    inputContrasena.type = 'password';
+    }
+    
+    if (inputConfirContrasena.type === 'password') {
+    inputConfirContrasena.type = 'text';
+    } else {
+    inputConfirContrasena.type = 'password';
+    }
+    }
+    
+    // Agregar un event listener al botón de validación de formulario
+    var botonRegistro = document.getElementById('registroBtn');
+    botonRegistro.addEventListener('click', function () {
+    if (validarFormulario()) {
+    guardarDatos();
+    mostrarVentanaEmergente();
+    }
+    });
+    
+    
+    
+    
+    
+    
