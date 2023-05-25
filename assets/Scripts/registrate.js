@@ -62,7 +62,9 @@ const datosRegistro = [];
 
 const guardarDatos = (event) => {
   if (validarFormulario()) {
-    alert("Registro exitoso");
+    swal( " ¡Registro Exitoso! ",{
+      icon: "success",
+    });
     event.preventDefault();
     let nombre = document.getElementById('nombre').value;
     let correo = document.getElementById('correo').value;
