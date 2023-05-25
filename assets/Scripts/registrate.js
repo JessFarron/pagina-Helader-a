@@ -81,9 +81,8 @@ const guardarDatos = (event) => {
   }
 }
 
-function mostrarContrasena() {
+const mostrarContrasena=()=> {
   let inputContrasena = document.getElementById('contrasena');
-  let inputConfirContrasena = document.getElementById('confirContrasena');
 
   if (inputContrasena.type === 'password') {
     inputContrasena.type = 'text';
@@ -91,15 +90,16 @@ function mostrarContrasena() {
     inputContrasena.type = 'password';
   }
 
+}
+
+const mostrarContrasena2=()=> {
+  let inputConfirContrasena = document.getElementById('confirContrasena');
   if (inputConfirContrasena.type === 'password') {
     inputConfirContrasena.type = 'text';
   } else {
     inputConfirContrasena.type = 'password';
   }
 }
-
-
-
 
 
 
