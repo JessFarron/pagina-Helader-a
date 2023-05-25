@@ -16,43 +16,57 @@ const validarFormulario = () => {
 
   // Validación del nombre
   if (nombre.trim() === '') {
-    alert('Por favor, ingresa tu nombre.');
+    swal( " Por favor, ingresa tu nombre. ",{
+      icon: "warning",
+    });
     return false;
   }
 
   // Validación del correo electrónico
   if (!formatoCorreo.test(correo)) {
-    alert('Por favor, ingresa un correo electrónico válido.');
+    swal( " Por favor, ingresa un correo electrónico válido. ",{
+      icon: "warning",
+    });
     return false;
   }
 
   // Validación de la contraseña
   if (!formatoContrasena.test(contrasena)) {
-    alert('Por favor, ingresa una contraseña de al menos 6 caracteres.');
+    swal( " Por favor, ingresa una contraseña de al menos 6 caracteres. ",{
+      icon: "warning",
+    });
     return false;
   }
 
   // Validación de la confirmación de contraseña
   if (contrasena !== confirContrasena) {
-    alert('Las contraseñas no coinciden. Por favor, verifica.');
+    swal( " Las contraseñas no coinciden. Por favor, verifica. ",{
+      icon: "warning",
+    });
     return false;
   }
 
   // Validación del teléfono
   if (telefono.trim() === '') {
-    alert('Por favor, ingresa tu número de teléfono.');
+    swal( " Por favor, ingresa tu número de teléfono. ",{
+      icon: "warning",
+    });
     return false;
   }
 
   // Validación del número de teléfono (10 dígitos)
   if (telefono.length !== 10 || !(/^\d+$/.test(telefono))) {
-    alert('Por favor, ingresa un número de teléfono válido de 10 dígitos.');
+    swal( " Por favor, ingresa un número de teléfono válido de 10 dígitos. ",{
+      icon: "warning",
+    });
     return false;
   }
 
   // Validación de la dirección de envío
   if (direccionEnvio.trim() === '') {
-    alert('Por favor, ingresa tu dirección de envío.');
+    swal( " Por favor, ingresa tu dirección de envío. ",{
+      icon: "warning",
+    });
     return false;
   }
   return true;
