@@ -68,13 +68,16 @@
     </div>
   </div>
 </nav>
-<div class="container">
+<div class="container" id="contenedor-productosHTML">
+
+
+
   <div class="row">
-    <div class="col-3 mt-4">
-      <h3 id="titulo-categorias"> Categoría</h3>
+    <div class="col-3 mt-4" id="contenedor-categoria">
+      <h3 id="titulo-categorias"> Categoría </h3>
       <br>
       <ul id="links-productos">
-        <li> <a href="#titulo-helado" class="text-decoration-none"> Helados</a></li>
+        <a href="#titulo-helado" class="text-decoration-none"> <li> Helados</a></li>
         <a href="#titulo-heladoP" class="text-decoration-none"><li> Helados Premium</li></a>
         <a href="#titulo-paleta" class="text-decoration-none"><li>Paletas</li></a>
         <a href="#titulo-agua" class="text-decoration-none"><li> Aguas</li></a>
@@ -84,78 +87,98 @@
 
     <div class="col-9"> <!--División columna de todos los productos  -->
 
+        <!-- Empieza CATEGORIA OCULTA -->
+      <div id="categoria-responsive" class="row text-center">
+        <div class="col-12 mt-4" id="contenedor-categoria-responsive">
+          <h3 id="titulo-categorias-responsive"> Categoría </h3>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="boton-producto btn col-sm-2">Helados</button>
+            <button type="button" class="boton-producto btn  col-sm-2">Helados Premium</button>
+            <button type="button" class="boton-producto btn  col-sm-2">Paletas</button>
+            <button type="button" class="boton-producto btn col-sm-2">Agua</button>
+          </div>
+
+        </div>
+
+      </div>  <!-- Acaba CATEGORIA OCULTA -->
+
+
+
+
       <div > <!-- División para seccion helados -->
         <h1 id="titulo-helado" class="titulo-productos mt-3 mb-2">Helados</h1><hr>
         <!-- Esto tiene que llenarse con JavaS-->
-        <div id="contenedor-helados" class="contenedor-productos"> 
-<!--           <div class="mt-2">
-            <img src="../image/imgs-helado/helado_baileys.jpg" width="200" alt="Foto helado chocolate">
+        <div id="contenedor-helados" class="contenedor-productos row"> 
+<!--            <div class="mt-2 col-sm-6 col-lg-4 pIndividual">
+            <img src="../image/imgs-helado/helado_baileys.png" width="200" alt="Foto helado chocolate">
             <div class="nombre-producto"> Chocolate</div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al <br>carrito</button>
           </div>
 
-          <div class="mt-2">
+          <div class="mt-2 col-sm-6 col-lg-4 pIndividual">
             <img src="../image/imgs-paletas/paleta-oreo.png" width="200"  alt="Foto helado vainilla">
             <div class="nombre-producto"> Vainilla </div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al <br> carrito</button>
           </div>
 
-          <div class="mt-2">
+          <div class="mt-2 col-sm-6  col-lg-4">
             <img src="../image/imgs-paletas/paleta-oreo.png" width="200" alt="Foto helado oreo">
             <div class="nombre-producto"> Chocolate</div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al<br>carrito</button>
           </div>
 
-          <div class="mt-2">
+          <div class="mt-2 col-sm-6  col-lg-4">
             <img src="../image/imgs-paletas/paleta-oreo.png" width="200" alt="Foto helado baileys">
             <div class="nombre-producto"> Chocolate</div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al <br> carrito</button>
           </div>
 
-          <div class="mt-2">
+          <div class="mt-2 col-sm-6  col-lg-4">
             <img src="../image/imgs-paletas/paleta-oreo.png" width="200" alt="Foto helado baileys">
             <div class="nombre-producto"> Chocolate</div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al <br> carrito</button>
           </div>
 
-          <div class="mt-2">
+          <div class="mt-2  col-sm-6 col-lg-4">
             <img src="../image/imgs-paletas/paleta-oreo.png" width="200" alt="Foto helado baileys">
             <div class="nombre-producto"> Chocolate</div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al <br> carrito</button>
           </div>
 
-          <div class="mt-2">
+          <div class="mt-2 col-sm-6 col-lg-4">
             <img src="../image/imgs-paletas/paleta-oreo.png" width="200" alt="Foto helado baileys">
             <div class="nombre-producto"> Chocolate</div>
             <div class="precio-producto">$35</div>
             <button class="boton-agregar">Agregar al <br> carrito</button>
-          </div> -->
+          </div>  -->
 
 
         </div>
       </div>
 
       <div > <!-- División para seccion helados -->
-        <h1 id="titulo-heladoP" class="titulo-productos mt-3 mb-2">Helados Premium</h1><hr>
-        <div id="contenedor-helados-premium" class="contenedor-productos" ></div>
+        <h1 id="titulo-heladoP" class="titulo-productos mt-5 mb-2">Helados Premium</h1><hr>
+        <div id="contenedor-helados-premium" class="contenedor-productos row" ></div>
       </div>
       
       <!-- División para seccion paletas -->
       <div > 
-        <h1 id="titulo-paleta" class="titulo-productos mt-3 mb-2">Paletas</h1><hr>
-        <div id="contenedor-paletas" class="contenedor-productos"></div>
+        <h1 id="titulo-paleta" class="titulo-productos mt-5 mb-2">Paletas</h1><hr>
+        <div id="contenedor-paletas" class="contenedor-productos row"></div>
       </div>
 
        <!-- División para seccion aguas -->
       <div > 
-        <h1 id="titulo-agua" class="titulo-productos mt-3 mb-2">Aguas</h1><hr>
-        <div id="contenedor-aguas" class="contenedor-productos"></div>
+        <h1 id="titulo-agua" class="titulo-productos mt-5 mb-2">Aguas</h1><hr>
+        <div id="contenedor-aguas" class="contenedor-productos row"></div>
       </div>
     </div>
   </div>

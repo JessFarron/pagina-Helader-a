@@ -228,5 +228,23 @@ footer {
 #links-productos {
   font-size: 20px;
 }
+#categoria-responsive{display: none;}
 
+@media screen and (max-width: 980px) {
+  #contenedor-categoria {
+    display: none;
+  }
+
+  .titulo-productos {
+    text-align: center;
+  }
+  #categoria-responsive {
+    display: block;
+    font-size: 100px;
+  }
+.boton-producto {
+  color: #FFFFFF !important;
+   background-color: #AD7C68 !important;
+  }
+}
 /* ------------------------------ */
