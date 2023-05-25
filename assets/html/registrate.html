@@ -12,7 +12,6 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
   <!--Bootstrap icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../css/confetti.css">
   <title>Registrarse</title>
 </head>
 
@@ -85,7 +84,7 @@
             <h2>Regístrate</h2>
           </div>
 
-          <form onsubmit="return validarFormulario();">
+          <form>
             <div class="form-group my-4">
               <label for="nombre">Nombre:</label>
               <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -132,7 +131,7 @@
             <div class="row mt-4">
               <div class="col-12 d-flex justify-content-center mt-2">
                 <button id="registroBtn" type="submit" class="btn btn-dark btn-block mb-4"
-                  onclick="validarFormulario()">
+                  onclick="guardarDatos(event)">
                   Registrarse
                 </button>
                 <a href="/index.html" class="btn btn-outline-dark btn-block mb-4 mx-4" target="_blank">
@@ -225,7 +224,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -238,11 +236,6 @@
   <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
   <!-- Script -->
   <script src="../Scripts/registrate.js"></script>
-  <script src="../Scripts/confetti.js"></script>
-
-
-
-
 </body>
 
 </html>
