@@ -170,6 +170,25 @@ footer {
 }
 
 /*Aqui empiza log in*/
+
+.container-round{
+  border-radius: 10px;
+  background:  #fcfcec;
+}
+
+.anchor-text{
+  color: #da0f7e;
+}
+
+.form-check-input[type="checkbox"]:checked{
+  background-color:  #da0f7e;
+  border-color:  #da0f7e;
+}
+
+.form-check-input[type="checkbox"]:not(:checked){
+  border-color:  #da0f7e;
+}
+
 #container4{
   border-radius: 10px;
   background:  #fcfcec;
