@@ -45,13 +45,12 @@ body{
 }
 
 .texto-imagen {
-  
   border-radius: 10px;
   width: 500px;
   text-align: center;
   padding: 30px;
-  color: #ffffff;
-  background: linear-gradient(0deg, rgba(233, 250, 254, 0) 10%, #AD7C68 100%);
+  color: #000000;
+  background-color: #FAB9D1;
 
 }
 
@@ -83,9 +82,6 @@ body{
   text-align: center;
 }
 
-.paneles {
-  border-radius: 10px;
-}
 
 .btn {
   text-decoration: none;
@@ -113,8 +109,9 @@ footer {
 }
 
 .paneles {
+  border-radius: 10px;
   background: rgb(190, 242, 255);
-  background: linear-gradient(0deg, rgba(233, 250, 254, 1) 65%, #AD7C68 90%);
+  background: linear-gradient(0deg, rgba(233, 250, 254, 1) 65%, #FAB9D1 90%);
 }
 /* Aqui comienza el estilo del carousel */
 .card{
