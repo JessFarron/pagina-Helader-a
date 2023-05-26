@@ -2,7 +2,16 @@
 
 * {
   font-family: 'Josefin Sans', sans-serif;
-  
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body{
+  background: linear-gradient(to top, #FDE1B9, #FCFCEC);
+}
+
+.titulos{
+  font-weight: 700;
 }
 
 .contenedor-imagen {
@@ -29,21 +38,19 @@
     align-content: center;
     height: 500px;
   }
-
+  
   .texto-imagen{
     width: 300px;
   }
 }
 
-
 .texto-imagen {
-  
   border-radius: 10px;
   width: 500px;
   text-align: center;
   padding: 30px;
-  color: #ffffff;
-  background: linear-gradient(0deg, rgba(233, 250, 254, 0) 10%, #AD7C68 100%);
+  color: #000000;
+  background-color: #FAB9D1;
 
 }
 
@@ -75,9 +82,6 @@
   text-align: center;
 }
 
-.paneles {
-  border-radius: 10px;
-}
 
 .btn {
   text-decoration: none;
@@ -105,39 +109,142 @@ footer {
 }
 
 .paneles {
+  border-radius: 10px;
   background: rgb(190, 242, 255);
-  background: linear-gradient(0deg, rgba(233, 250, 254, 1) 65%, #AD7C68 90%);
+  background: linear-gradient(0deg, rgba(233, 250, 254, 1) 65%, #FAB9D1 90%);
 }
-
-.cards-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.card img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.card {
+/* Aqui comienza el estilo del carousel */
+.card{
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  width: calc(100%/3);
+  padding: 10px;
+  max-width: 480px;
   border: none;
-  border-radius: 0;
-  text-align: center;
-}
-
-.carousel-inner {
-  padding: 1em;
-}
-
-#imagen-contacto {
   border-radius: 10px;
+  text-align: center;
+  background-image: linear-gradient(180deg, #FAB9D1 50%, #FFFFFF 50%);
+}
+
+.carousel-control-prev-icon{
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.carousel-control-next-icon{
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.carousel-indicators{
+  position: relative !important;
+}
+
+.inidicators-carousel{
+  height: 1rem  !important;
+  width: 1rem !important;
+  border-radius: 50%;
+  background-color: #000000 !important;
 }
 
 @media (min-width: 768px) {
   .card img {
     height: 11em;
   }
+  .card-full{
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    padding: 10px;
+    margin: 0 0.5em;
+    width: calc(100%/3);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #FAB9D1 50%, #FFFFFF 50%);
+  }
 }
+/* Aquí termina el estilo del carousel */
+#imagen-contacto {
+  border-radius: 10px;
+}
+
+/*Aqui empiza log in*/
+
+.container-round{
+  border-radius: 10px;
+  background:  #fcfcec;
+}
+
+.anchor-text{
+  color: #da0f7e;
+}
+
+.form-check-input[type="checkbox"]:checked{
+  background-color:  #da0f7e;
+  border-color:  #da0f7e;
+}
+
+.form-check-input[type="checkbox"]:not(:checked){
+  border-color:  #da0f7e;
+}
+
+#container4{
+  border-radius: 10px;
+  background:  #fcfcec;
+}
+
+
+/* STYLE DE PRODUCTOS */
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nombre-producto {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.precio-producto {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.boton-agregar{
+  color: #FFFFFF;
+  background-color:  black;
+  padding: 2px 30px;
+  border-radius: 15px;
+}
+
+.titulo-productos {
+  font-weight: 600;
+}
+
+#titulo-categorias {
+  font-weight: 600;
+}
+
+#links-productos {
+  font-size: 20px;
+}
+#categoria-responsive{display: none;}
+
+@media screen and (max-width: 980px) {
+  #contenedor-categoria {
+    display: none;
+  }
+
+  .titulo-productos {
+    text-align: center;
+  }
+  #categoria-responsive {
+    display: block;
+    font-size: 100px;
+  }
+.boton-producto {
+  color: #FFFFFF !important;
+   background-color: #AD7C68 !important;
+  }
+}
+/* ------------------------------ */
