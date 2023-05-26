@@ -11,14 +11,12 @@ const imprimirProductos = () => {
     let imagenI = producto.url;
 
     let productoEnArray = document.createElement('div');
-    productoEnArray.setAttribute("class","contenedor-productos");
+    productoEnArray.setAttribute("class","mt-2 col-sm-6 col-lg-4");
     productoEnArray.innerHTML = `
-      <div class="mt-2">
         <img src="${imagenI}" width="200" alt="Foto helado chocolate">
         <div class="nombre-producto"> ${nombreI}</div>
         <div class="precio-producto">$ ${precioI}</div>
         <button class="boton-agregar">Agregar al <br>carrito</button>
-      </div>
     `;
     if (categoria==="helados") {
         heladosContenedor.appendChild(productoEnArray);
@@ -41,21 +39,21 @@ const productos = [
         nombre: "Chocolate",
         descripcion: "Es de chocolate",
         precio: "35",
-        url: "../image/imgs-helado/helado_choco.jpg",
+        url: "../image/imgs-helado/helado_choco.png",
     },
     {
         categoria: "helados",
         nombre: "Oreo",
         descripcion: "Es de galleta oreo",
         precio: "35",
-        url: "../image/imgs-helado/helado_oreo.jpg",
+        url: "../image/imgs-helado/helado_oreo.png",
     },
     {
         categoria: "helados",
         nombre: "Vainilla",
         descripcion: "Es de vainilla",
         precio: "35",
-        url: "../image/imgs-helado/helado_vainilla.jpg",
+        url: "../image/imgs-helado/helado_vainilla.png",
     },
 
     {
@@ -63,8 +61,25 @@ const productos = [
         nombre: "Baileys",
         descripcion: "Es de Premium Baileys",
         precio: "45",
-        url: "../image/imgs-helado/helado_baileys.jpg",
+        url: "../image/imgs-helado/helado_baileys.png",
     },
+
+    {
+        categoria: "helados premium",
+        nombre: "Baileys",
+        descripcion: "Es de Premium Baileys",
+        precio: "45",
+        url: "../image/imgs-helado/heladoP_ferrero.png",
+    },
+    {
+        categoria: "helados premium",
+        nombre: "Baileys",
+        descripcion: "Es de Premium Baileys",
+        precio: "45",
+        url: "../image/imgs-helado/heladoP_M&M.png",
+    },
+
+
     {
         categoria: "paletas",
         nombre: "Maracuya",
@@ -138,4 +153,4 @@ const productos = [
 
 document.addEventListener('DOMContentLoaded', () => {
     imprimirProductos();
-  });
+  }); 
