@@ -1,123 +1,129 @@
 
 
-const validarFormulario = () => {
-  let nombre = document.getElementById('nombre').value;
-  let correo = document.getElementById('correo').value;
-  let contrasena = document.getElementById('contrasena').value;
-  let confirContrasena = document.getElementById('confirContrasena').value;
-  let telefono = document.getElementById('telefono').value;
-  let direccionEnvio = document.getElementById('direccionEnvio').value;
+function validarFormulario() {
+  var nombre = document.getElementById('nombre').value;
+  var correo = document.getElementById('correo').value;
+  var contrasena = document.getElementById('contrasena').value;
+  var confirContrasena = document.getElementById('confirContrasena').value;
+  var telefono = document.getElementById('telefono').value;
+  var direccionEnvio = document.getElementById('direccionEnvio').value;
 
   // Expresión regular para validar el formato de correo electrónico
-  let formatoCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var formatoCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   // Expresión regular para validar la contraseña (al menos 6 caracteres)
-  let formatoContrasena = /^.{6,}$/;
+  var formatoContrasena = /^.{6,}$/;
 
   // Validación del nombre
   if (nombre.trim() === '') {
-    swal( " Por favor, ingresa tu nombre. ",{
-      icon: "warning",
-    });
+    alert('Por favor, ingresa tu nombre.');
     return false;
   }
 
   // Validación del correo electrónico
   if (!formatoCorreo.test(correo)) {
-    swal( " Por favor, ingresa un correo electrónico válido. ",{
-      icon: "warning",
-    });
+    alert('Por favor, ingresa un correo electrónico válido.');
     return false;
   }
 
   // Validación de la contraseña
   if (!formatoContrasena.test(contrasena)) {
-    swal( " Por favor, ingresa una contraseña de al menos 6 caracteres. ",{
-      icon: "warning",
-    });
+    alert('Por favor, ingresa una contraseña de al menos 6 caracteres.');
     return false;
   }
 
   // Validación de la confirmación de contraseña
   if (contrasena !== confirContrasena) {
-    swal( " Las contraseñas no coinciden. Por favor, verifica. ",{
-      icon: "warning",
-    });
+    alert('Las contraseñas no coinciden. Por favor, verifica.');
     return false;
   }
 
   // Validación del teléfono
   if (telefono.trim() === '') {
-    swal( " Por favor, ingresa tu número de teléfono. ",{
-      icon: "warning",
-    });
+    alert('Por favor, ingresa tu número de teléfono.');
     return false;
   }
 
   // Validación del número de teléfono (10 dígitos)
   if (telefono.length !== 10 || !(/^\d+$/.test(telefono))) {
-    swal( " Por favor, ingresa un número de teléfono válido de 10 dígitos. ",{
-      icon: "warning",
-    });
+    alert('Por favor, ingresa un número de teléfono válido de 10 dígitos.');
     return false;
   }
 
   // Validación de la dirección de envío
   if (direccionEnvio.trim() === '') {
-    swal( " Por favor, ingresa tu dirección de envío. ",{
-      icon: "warning",
-    });
+    alert('Por favor, ingresa tu dirección de envío.');
     return false;
   }
+
+  // Envío del formulario si todas las validaciones son exitosas
+  mostrarVentanaEmergente();
   return true;
 }
 
-const datosRegistro = [];
+function guardarDatos() {
+  var nombre = document.getElementById('nombre').value;
+  var correo = document.getElementById('correo').value;
+  var telefono = document.getElementById('telefono').value;
 
-const guardarDatos = (event) => {
-  if (validarFormulario()) {
-    swal( " ¡Registro Exitoso! ",{
-      icon: "success",
-    });
-    event.preventDefault();
-    let nombre = document.getElementById('nombre').value;
-    let correo = document.getElementById('correo').value;
-    let telefono = document.getElementById('telefono').value;
+  // Crear un objeto con los datos a guardar
+  var datos = {
+    nombre: nombre,
+    correo: correo,
+    telefono: telefono
+  };
 
-    // Crear un objeto con los datos a guardar
-    const datos = {
-      nombre: nombre,
-      correo: correo,
-      telefono: telefono
-    };
-    datosRegistro.push(datos);
-    console.log(datosRegistro);
-    // Guardar los datos en el localStorage como una cadena JSON
-    localStorage.setItem('datosRegistro', JSON.stringify(datosRegistro));
-  }
+  // Guardar los datos en el localStorage como una cadena JSON
+  localStorage.setItem('datosRegistro', JSON.stringify(datos));
 }
 
-const mostrarContrasena=()=> {
-  let inputContrasena = document.getElementById('contrasena');
+function mostrarVentanaEmergente() {
+  // Crear un elemento de div para la ventana emergente
+  var ventanaEmergente = document.createElement('div');
+  ventanaEmergente.className = 'ventana-emergente';
+  ventanaEmergente.textContent = 'Registro exitoso';
 
-  if (inputContrasena.type === 'password') {
+  // Agregar la ventana emergente al cuerpo del documento
+  document.body.appendChild(ventanaEmergente);
+
+  // Lanzar el confetti utilizando la biblioteca confetti-js
+  confetti.start();
+
+  // Después de unos segundos, eliminar la ventana emergente y detener el confetti
+  setTimeout(function () {
+    document.body.removeChild(ventanaEmergente);
+    confetti.stop();
+    }, 5000);
+    }
+    
+    function mostrarContrasena() {
+    var inputContrasena = document.getElementById('contrasena');
+    var inputConfirContrasena = document.getElementById('confirContrasena');
+    
+    if (inputContrasena.type === 'password') {
     inputContrasena.type = 'text';
-  } else {
+    } else {
     inputContrasena.type = 'password';
-  }
-
-}
-
-const mostrarContrasena2=()=> {
-  let inputConfirContrasena = document.getElementById('confirContrasena');
-  if (inputConfirContrasena.type === 'password') {
+    }
+    
+    if (inputConfirContrasena.type === 'password') {
     inputConfirContrasena.type = 'text';
-  } else {
+    } else {
     inputConfirContrasena.type = 'password';
-  }
-}
-
-
-
-
-
+    }
+    }
+    
+    // Agregar un event listener al botón de validación de formulario
+    var botonRegistro = document.getElementById('registroBtn');
+    botonRegistro.addEventListener('click', function () {
+    if (validarFormulario()) {
+    guardarDatos();
+    mostrarVentanaEmergente();
+    }
+    });
+    
+    
+    
+    
+    
+    

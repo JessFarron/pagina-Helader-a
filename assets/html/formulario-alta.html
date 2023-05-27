@@ -67,78 +67,64 @@
   </nav>
 
   <!--Formulario alta de productos-->
-
-  <div class="container justify-content-center my-5" id="container4">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6 d-none d-lg-flex">
-        <img src="https://i.pinimg.com/564x/25/18/a1/2518a12c65718c96dc105a0fa1804fab.jpg"alt="helado"
-          class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5"  />
-      </div>
-      <div class="col-lg-6">
-        <div class="card-body py-5 px-md-5">
-          <form>
-            <div class="logo text-center mb-2">
-              <img src="../image/imgs-navbar/logo.png" alt="logo" class="img-fluid" width="200px">
-              <h2>Alta de productos</h2>
+      <div class="col">
+        <form>
+          <div class="row mb-3">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre del producto</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nombre" required>
             </div>
-            <div class="row mb-2">
-              <label for="nombre" class="form-outline mt-5">Nombre del producto</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="row mb-3">
+            <label for="descripcion" class="col-sm-2 col-form-label">Descripcion</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="descripcion" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="precio" class="col-sm-2 col-form-label">Precio</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="precio" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="img-url" class="col-sm-2 col-form-label">Url de la imagen</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="img-url" required>
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Categoria</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="helados" value="helados" required>
+                <label class="form-check-label" for="helados">
+                  Helados
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="paletas" value="paletas" required>
+                <label class="form-check-label" for="paletas">
+                  Paletas
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="aguas" value="aguas" required>
+                <label class="form-check-label" for="aguas">
+                  Aguas
+                </label>
               </div>
             </div>
-            <div class="row mb-2">
-              <label for="descripcion" class="form-outline mt-2">Descripción</label>
-              <div class="col-sm-10">
-                <textarea type="text" class="form-control" id="descripcion" required></textarea>
-              </div>
-            </div>
-            <div class="row mb-2">
-              <label for="precio" class="form-outline mt-2">Precio</label>
-              <div class="col-sm-10">
-                <input type="number" class="form-control" id="precio" required min="0" max="1000">
-              </div>
-            </div>
-            <div class="row mb-2">
-              <label for="img-url" class="form-outline mt-2">Url de la imagen</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="img-url" required>
-              </div>
-            </div>
-            <fieldset class="row mb-2">
-              <legend class="form-outline mt-2">Categoría</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="helados" value="helados" required>
-                  <label class="form-check-label" for="helados">
-                    Helados
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="paletas" value="paletas" required>
-                  <label class="form-check-label" for="paletas">
-                    Paletas
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="aguas" value="aguas" required>
-                  <label class="form-check-label" for="aguas">
-                    Aguas
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            
-        
-  
-            <button onclick="agregarProductos(event)"  type="submit" class="btn btn-dark mt-2">Agregar</button>
-            <!--<button type="submit" class="btn btn-danger">Borrar</button>-->
-          </form>
-        </div>
+          </fieldset>
+
+          <button onclick="agregarProductos(event)"  type="submit" class="btn btn-primary">Agregar</button>
+          <button type="submit" class="btn btn-danger">Borrar</button>
+        </form>
       </div>
     </div>
   </div>
-
 
 
 
