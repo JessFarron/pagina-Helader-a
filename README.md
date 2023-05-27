@@ -1,31 +1,45 @@
-# pagina-Helader-a
+# E-commerce heladería "Los Reyes de la Michoacana"
+## Descripción
+Este repositorio es un proyecto de ecommerce de heladería desarrollado por un grupo de principiantes apasionados por la programación y la creación de aplicaciones web. El objetivo principal de este proyecto es construir una plataforma de venta en línea para una heladería, brindando a los usuarios la posibilidad de explorar diferentes sabores de helados y realizar pedidos. La gestión de pagos no se contempla realizar en el proyecto. 
+Los lenguajes utilizados fueron Html, CSS (Bootstarp como framework) y Javascript.
 
-<h1>Pagina e-commerce heladería los Reyes de la Michoacana</h1>
-<p>Trabajo colaborativo sobre diseño  de una página web</p>
-    
-<h2>Estado del proyecto</h2>
-<p>En desarrollo</p>
-    
-<h2>Cómo usar el proyecto</h2>
-    
-<ul>
-    <li>colocar aqui instrucciones</li>
-</ul>
-    
-<h2>Tecnologías utilizadas</h2>
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-    <li>Bootstrap</li>
-</ul>
-<h2>Autoría</h2>
-<ol>
-    <li></li>
-    <li></li>
-    <li>Juan Pablo FM</li>
-    <li>Abraham Castillo</li>
-    <li></li>
-</ol>
-<h2>Agradecimientos</h2>
-<p>Gracias a todo el equipo por la buena comunicación y trabajo en equipo</p>
+Aunque somos principiantes, nos esforzamos por aprender y mejorar nuestras habilidades mientras trabajamos en este proyecto colaborativo. Valoramos mucho la contribución de otros desarrolladores, ya sean principiantes o experimentados, que estén dispuestos a unirse a nosotros y ayudarnos a construir una aplicación de calidad.
+
+## URL del Deploy
+Deploy de la plataforma (https://jessfarron.github.io/pagina-Helader-a/)
+## Screenshot
+![image](https://github.com/JessFarron/pagina-Helader-a/assets/126412050/52b22d9d-82ef-4916-9b5b-ce1d2690c8ce)
+
+## Tabla de contenidos
+* [Instrucciones de instalación]
+* [Uso](#uso)
+* [Colaboradores](#colaboradores)
+* [Preguntas](#Preguntas)
+## Instrucciones de instalación
+Contar con un entorno de desarrollo integrado (IDE). 
+
+## Uso
+Descarga una copia local del repositorio en tu máquina.
+Acceder a la aplicación. 
+Explora el catálogo de helados, agrega productos al carrito de compras y realiza pedidos.
+También puedes registrarte como usuario para acceder a funcionalidades adicionales.
+
+
+## Colaboradores
+* [github/JessFarron](https://github.com/JessFarron)
+* [github/danngarcia](https://github.com/danngarcia)
+* [github/jpfigueroamoran](https://github.com/jpfigueroamoran) 
+* [github/didierlp](https://github.com/didierlp) Didier Lemus Pérez
+* [github/alexismoreno9811](https://github.com/alexismoreno9811) Alexis Moreno
+* [github/almber](https://github.com/almber) Berenice Gudiño
+* [github/karen-vp](https://github.com/karen-vp) Karen Valier
+* [github/acp4](https://github.com/acp4) Abraham Castillo
+* [github/lupitagb](https://github.com/lupitagb) Guadalupe Galván
+
+
+
+
+
+
+## Preguntas y contribuciones
+En caso de preguntas o deseos de contribuir al proyecto, puedes enviar un correo a .
