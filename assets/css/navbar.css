@@ -1,47 +1,49 @@
-.navbar {
-  height: 300;
-  background-size:cover;
-  background-position:center;   
+#nav-menu {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  background-image: url(../image/imgs-navbar/derretido-200.svg);
+  position: relative; 
+  padding: 30px;
 }
 
-#svg{
-  height: 300px;
+.nav-content{
+  position: absolute; 
+  bottom: 80px; 
+  left: 0px;
+  right: 10px;
+
 }
-#fondo{
-  height: 300px;
-}
-.navbar-brand img {
-  height: 250px;
+
+@media screen and (max-width:986px) {
+  .list {
+    width: 100% !important;
+    height: 100vh !important;
+    margin: 0px !important;
+    padding: 30px !important;
+    background-color: #ffbed7 !important;
+    text-align: left !important;
+    position: absolute !important;
+    top: 5rem !important;
+    left: 0px !important;
+  }
+
 }
 
 .navbar-nav li {
-  margin-right: 10px;
   font-weight: bold;
-  padding: 50px;
-  position: relative;
-  bottom: 50px;
-
 }
 
-#logo{ 
+#logo {
   width: 150px;
   height: 100px;
   position: relative;
-  bottom: 50px;
+  right: 0px;
+  left: 0px;
+  bottom: 40px;
 }
 
-.navbar-nav li:last-child {
-  margin-right: 0;
-  position: relative;
-  bottom: 50px;
-}
-
-#perfil{
+.icon {
   width: 25PX;
   height: 25PX;
-}
-
-.d-flex{
-  height: 35px ;
-
 }
